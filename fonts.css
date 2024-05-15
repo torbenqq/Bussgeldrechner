@@ -1,0 +1,119 @@
+@font-face {
+  font-family: San-Francisco;
+  src: url(./SF-Pro-Text-Light.woff);
+  font-weight: 100;
+  font-style: normal
+}
+
+@font-face {
+  font-family: San-Francisco;
+  src: url(./SF-Pro-Text-LightItalic.woff);
+  font-weight: 100;
+  font-style: italic
+}
+
+@font-face {
+  font-family: San-Francisco;
+  src: url(./SF-Pro-Text-Light.woff);
+  font-weight: 300
+}
+
+@font-face {
+  font-family: San-Francisco;
+  src: url(./SF-Pro-Text-LightItalic.woff);
+  font-weight: 300;
+  font-style: italic
+}
+
+@font-face {
+  font-family: San-Francisco;
+  src: url(./SF-Pro-Text-Regular.woff);
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: San-Francisco;
+  src: url(./SF-Pro-Text-RegularItalic.woff);
+  font-weight: 400;
+  font-style: italic
+}
+
+@font-face {
+  font-family: San-Francisco;
+  src: url(./SF-Pro-Text-Medium.woff);
+  font-weight: 500
+}
+
+@font-face {
+  font-family: San-Francisco;
+  src: url(./SF-Pro-Text-MediumItalic.woff);
+  font-weight: 500;
+  font-style: italic
+}
+
+@font-face {
+  font-family: San-Francisco;
+  src: url(./SF-Pro-Display-Black.woff);
+  font-weight: 700;
+  font-style: normal
+}
+
+@font-face {
+  font-family: San-Francisco;
+  src: url(./SF-Pro-Display-BlackItalic.woff);
+  font-weight: 700;
+  font-style: italic
+}
+
+@font-face {
+  font-family: San-Francisco;
+  src: url(./SF-Pro-Text-Bold.woff);
+  font-weight: 900;
+  font-style: normal
+}
+
+@font-face {
+  font-family: San-Francisco;
+  src: url(./SF-Pro-Text-BoldItalic.woff);
+  font-weight: 900;
+  font-style: italic
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(./ProximaNova-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(./ProximaNova-Semibold.woff);
+  font-weight: 500;
+  font-display: swap
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(./ProximaNova-Light.woff);
+  font-weight: 100;
+  font-display: swap
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(./ProximaNova-Bold.woff);
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(./ProximaNova-Extrabld.woff);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap
+}
