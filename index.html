@@ -1,28 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPG1HW1RHT"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-YPG1HW1RHT');
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bußgeldrechner DE01</title>
+    <title>Bußgeldrechner DE01 - SAHP</title>
     <script src="index.js"></script>
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="DOJ_logo.png?" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="style_sahp_overwrite.css">
+    <link rel="shortcut icon" href="SAHP_logo.png?" sizes="32x32" type="image/png">
     <meta content="Bußgeldrechner DE 01" property="og:title" />
-    <meta content="Bußgeldrechner für GrandRP DE 01 - Made by Joshi Enrage" property="og:description" />
-    <meta content="https://dev-gosling.github.io/bussgeldrechner" property="og:url" />
-    <meta content="https://dev-gosling.github.io/bussgeldrechner/DOJ_logo.png" property="og:image" />
-    <meta content="#5c69ff" data-react-helmet="true" name="theme-color" />
+    <meta content="Bußgeldrechner für GrandRP DE 01 - Made by Joshi Enrage for SAHP" property="og:description" />
+    <meta content="https://dev-gosling.github.io/sahp-bgr" property="og:url" />
+    <meta content="https://dev-gosling.github.io/sahp-bgr/SAHP_logo.png" property="og:image" />
+    <meta content="#65d3ff" data-react-helmet="true" name="theme-color" />
 
     <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.2.1/css/pro.min.css">
     <link rel="stylesheet" href="notifications.css">
@@ -31,7 +22,7 @@
 <body>
 
     <div id="loading">
-        <img draggable="false" src="https://dev-gosling.github.io/bussgeldrechner/DOJ_logo.png" alt="DOJ_logo">
+        <img draggable="false" src="https://dev-gosling.github.io/sahp-bgr/SAHP_logo.png" alt="SAHP_logo">
         <div id="dotContainer">
             <div class="dot" id="dot1"><div class="dotContent"></div></div>
             <div class="dot" id="dot2"><div class="dotContent"></div></div>
@@ -41,15 +32,15 @@
 
     <div id="scriptingDiv" style="display: none;">
         <div id="disclaimerBackgroundBlocker"></div>
-        <div id="disclaimer">
-            <div id="disclaimer_title"><i id="disclaimer_title_warning" class="fa-regular fa-triangle-exclamation" style="color: rgb(255, 73, 73);"></i> Disclaimer</div>
-            <div id="disclaimer_text">Dieser Bußgeldrechner ist discontinued.<br><br><font style="color: white; font-size: 25px;"><b style="color: white; font-size: 25px;">[WERBUNG]</b> Ihr Sucht nach einer Alternative zu Grand?: <a href="https://discord.gg/dysenic" target="_blank" style="color: rgb(49, 121, 255);">discord.gg/dysenic</a></font></div>
-            <button id="disclaimer_button" onclick="JavaScript:disclaimerAccepted()">Warnung verstanden</button>
-        </div>
+    <div id="disclaimer">
+        <div id="disclaimer_title"><i id="disclaimer_title_warning" class="fa-regular fa-triangle-exclamation" style="color: rgb(255, 73, 73);"></i> Disclaimer</div>
+        <div id="disclaimer_text">Dieser Bußgeldrechner ist discontinued.<br><br><font style="color: white; font-size: 25px;"><b style="color: white; font-size: 25px;">[WERBUNG]</b> Ihr Sucht nach einer Alternative zu Grand?: <a href="https://discord.gg/dysenic" target="_blank" style="color: rgb(49, 121, 255);">discord.gg/dysenic</a></font></div>
+        <button id="disclaimer_button" onclick="JavaScript:disclaimerAccepted()">Warnung verstanden</button>
+    </div>
 
     <div id="header">
-        <div id="title">Bußgeldrechner</div>
-        <div id="credits">Made by Joshi Enrage | 147106</div>
+        <div id="title"><div id="header_icon"><img src="SAHP_logo.png" alt="SAHP LOGO" draggable="false"></div><div id="header_titleText">Bußgeldrechner - SAHP</div></div>
+        <div id="credits">Made by Joshi Enrage | 147106 for SAHP</div>
         <div id="searchbar"><input id="searchbar_input" oninput="JavaScript:searchFine()" type="text" placeholder="Nach einer Straftat suchen"></div>
     </div>
 
