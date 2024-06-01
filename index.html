@@ -735,46 +735,44 @@
                     <option value="usss">United States Secret Service</option>
                     <option value="fib">Federal Investigation Bureau</option>
                 </select>
-                <input id="übergabeInput_input" type="text" oninput="JavaScript:startCalculating()" placeholder="TV-Abtransport Beauftrager" maxlength="64">
+                    <input id="übergabeInput_input" type="text" oninput="JavaScript:startCalculating()" placeholder="TV-Abtransport Beauftrager" maxlength="64">
+                </div>
+                <div id="notepadArea">
+                    <textarea id="notepadArea_input" name="" placeholder="Schreibe deine Notizen hier rein..." id="" rows="3"></textarea>
+                </div>
+                <div id="reue">
+                    <input id="reue_box" onchange="JavaScript:startCalculating()" type="checkbox" name="">
+                    <label for="reue_box">
+                        <font id="checkboxfont1" style="line-height: 25px;">Reue</font>
+                        <br>
+                        <font style="font-size: 15px; font-weight: 400;">(Entfernt 2 Wanteds, 1 Wanted muss verbleiben gemäß StBG §35 - Reue)</font>
+                    </label>
+                </div>
+                <div id="systemfehler">
+                    <input id="systemfehler_box" onchange="JavaScript:startCalculating()" type="checkbox" name="">
+                    <label style="line-height: 25px;" for="systemfehler_box">Systemfehler</label>
+                </div>
+                <button id="showButton" onclick="JavaScript:showFines()">Bußgelder anzeigen</button>
+                <button id="showAttorneysButton" onclick="JavaScript:showAttorneys()">Anwaltsregister anzeigen</button>
+                <button id="rightsButton" onclick="JavaScript:rightsButton()">Rechte Des TVs</button>
+                <button id="resetButton" onclick="JavaScript:resetButton()">Zurücksetzen</button>
             </div>
-
-            <div id="notepadArea"><textarea id="notepadArea_input" name="" placeholder="Schreibe deine Notizen hier rein..." id="" rows="3"></textarea></div>
-
-            <div id="reue">
-                <input id="reue_box" onchange="JavaScript:startCalculating()" type="checkbox" name="">
-                <label for="reue_box"><font id="checkboxfont1" style="line-height: 25px;">Reue</font><br><font style="font-size: 15px; font-weight: 400;">(Entfernt 2 Wanteds, 1 Wanted muss verbleiben gemäß StBG §35 - Reue)</font></label>
+            <div id="finesListContainer" style="pointer-events: none;">
+                <div id="finesListContainer_title">Auflistung der zu vergebenen Geldstrafen</div>
+                <table id="finesListTable">
+                    <tr>
+                        <th style="width: 80%;">Grund für die Geldstrafe</th>
+                        <th style="width: 20%;">Bußgeld</th>
+                    </tr>
+                </table>
             </div>
-
-            <div id="systemfehler">
-                <input id="systemfehler_box" onchange="JavaScript:startCalculating()" type="checkbox" name="">
-                <label style="line-height: 25px;" for="systemfehler_box">Systemfehler</label>
+            <div id="attorneyContainer" style="pointer-events: none;">
+                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR9jL6XijVLrXvOs1bqjsE0cWfvER0e0VU4F8wh3wgVEIdY0wyIUAfxJaZZpwMPERPFGZHQ-_sdtjWi/pubhtml?gid=690010630&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
             </div>
-
-            <button id="showButton" onclick="JavaScript:showFines()">Bußgelder anzeigen</button>
-            <button id="showAttorneysButton" onclick="JavaScript:showAttorneys()">Anwaltsregister anzeigen</button>
-            <button id="rightsButton" onclick="JavaScript:rightsButton()">Rechte Des TVs</button>
-            <button id="resetButton" onclick="JavaScript:resetButton()">Zurücksetzen</button>
-        </div>
-
-        <div id="finesListContainer" style="pointer-events: none;">
-            <div id="finesListContainer_title">Auflistung der zu vergebenen Geldstrafen</div>
-            <table id="finesListTable">
-                <tr>
-                    <th style="width: 80%;">Grund für die Geldstrafe</th>
-                    <th style="width: 20%;">Bußgeld</th>
-                </tr>
-
-            </table>
-        </div>
-
-        <div id="attorneyContainer" style="pointer-events: none;">
-            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR9jL6XijVLrXvOs1bqjsE0cWfvER0e0VU4F8wh3wgVEIdY0wyIUAfxJaZZpwMPERPFGZHQ-_sdtjWi/pubhtml?gid=690010630&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
-        </div>
-        <div id="rightsContainer" style="pointer-events: none;">
+            <div id="rightsContainer" style="pointer-events: none;">
                 <iframe src="Rechte_des_TVs.png"></iframe>
+            </div>
+            <div id="standartNotifications"></div>
         </div>
-        <div id="standartNotifications">
-        </div>
-    </div>
-</body>
+    </body>
 </html>
