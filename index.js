@@ -58,8 +58,8 @@ function startCalculating() {
     let tvübergabe_org = document.getElementById("übergabeInput_select").value
     let tvübergabe_name = document.getElementById("übergabeInput_input").value
 
-    let shortMode = false
-    if (document.getElementById("checkbox_box").checked) shortMode = true
+    let longMode = true
+    if (document.getElementById("checkbox_box").checked) longMode = false
 
     let fineCollection = document.querySelectorAll(".selected")
     let fineCollectionWantedAmount = []
@@ -164,7 +164,7 @@ function startCalculating() {
             fineText = fineCollection[i].querySelector(".fineText").innerHTML
         }
 
-        if (shortMode) {
+        if (longMode) {
             if (reasonText == "") {
                 reasonText = `${day}.${month} ${hour}:${minute} - ${fineCollection[i].querySelector(".paragraph").hasAttribute("data-paragraphAddition") ? fineCollection[i].querySelector(".paragraph").getAttribute("data-paragraphAddition") + " " : ""}${fineCollection[i].querySelector(".paragraph").innerHTML}`
             } else {
@@ -284,6 +284,15 @@ function showAttorneys() {
     }
 } 
 
+function rightsButton() {
+    if (document.getElementById("rightsContainer").style.opacity == 0) {
+        document.getElementById("rightsContainer").style.opacity = 1
+        document.getElementById("rightsContainer").style.pointerEvents = ""
+    } else {
+        document.getElementById("rightsContainer").style.opacity = 0
+        document.getElementById("rightsContainer").style.pointerEvents = "none"
+    }
+} 
 
 window.onload = async () => {
     let savedBody;
@@ -437,4 +446,3 @@ async function openDisclaimer() {
 
 
     disclaimerNode.style.boxShadow = "rgba(0, 0, 0, 0.219) 0px 0px 70px 30vw"
-}
