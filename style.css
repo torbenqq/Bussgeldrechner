@@ -339,6 +339,33 @@ body {
     background-color: rgb(107, 232, 96);
 }
 
+#rightsButton {
+    width: 70%;
+    height: 4vh;
+    background-color: var(--inputs);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5vh;
+
+    margin-top: 1.5vh;
+
+    tab-size: 0px;
+    outline: none;
+    box-sizing: border-box;
+    font-weight: 500;
+    color: white;
+
+    transition: all 0.3s;
+
+    position: relative;
+    left: 5%;
+
+}
+
+#rightsButton:hover {
+    background-color: rgb(0, 119, 255);
+}
+
 #resetButton:hover {
     background-color: rgb(255, 44, 44);
 }
@@ -803,7 +830,7 @@ select {
 }
 
 
-/Rechte des TVs */  
+/* Rechte des TVs */  
 
 #rightsContainer {
     width: 52.5%;
